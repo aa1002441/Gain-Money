@@ -16,7 +16,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/about_app"
-            android:text="about body"/>
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:text="Gain Money App is developed for any one who wants to apply for a job or searching for jobs availability"/>
 
 
 </LinearLayout>
