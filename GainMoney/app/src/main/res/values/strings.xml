@@ -13,7 +13,7 @@
     <string name="placeOfBirth">Place of Birth:</string>
     <string name="dateOfBirth">Date of Birth:</string>
     <string name="gender">Gender:</string>
-    <string name="adddress1">Address1:</string>
+    <string name="adddress1">Address:</string>
     <string name="adddress2">Address2:</string>
     <string name="status">Status:</string>
     <string name="mobile">Mobile:</string>
@@ -23,6 +23,7 @@
     <string name="nationality">Nationality:</string>
     <string name="upload_cv">Upload a CV File</string>
     <string name="Next">Next</string>
+    <string name="save">Save</string>
     <string-array name="nationality">
         <item>Afghan</item>
         <item>Albanian</item>
