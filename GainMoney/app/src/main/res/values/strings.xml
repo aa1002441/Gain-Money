@@ -22,6 +22,7 @@
     <string name="extraInfo">Extra Information:</string>
     <string name="nationality">Nationality:</string>
     <string name="upload_cv">Upload a CV File</string>
+    <string name="Next">Next</string>
     <string-array name="nationality">
         <item>Afghan</item>
         <item>Albanian</item>
@@ -244,7 +245,7 @@
         <item>Welsh</item>
 
         <item>Yemenite</item>
-        
+
         <item>Zambian</item>
         <item>Zimbabwean</item>
     </string-array>
