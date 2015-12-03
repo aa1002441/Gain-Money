@@ -119,30 +119,7 @@
               />
       </TableRow>
 
-      <TableRow
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:visibility="visible">
-
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:id="@+id/pob"
-              android:text="@string/placeOfBirth"
-              android:layout_column="0"
-              />
-
-          <EditText
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:inputType="textAutoComplete"
-              android:ems="10"
-              android:id="@+id/placeOfBirth"
-              android:layout_column="1"
-              />
-      </TableRow>
-
-      <TableRow
+    <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="visible">
@@ -178,18 +155,63 @@
     </TableRow>
 
       <TableRow
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:visibility="visible">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/pob"
+              android:text="@string/placeOfBirth"
+              android:layout_column="0"
+              />
+
+          <EditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:inputType="textAutoComplete"
+              android:ems="10"
+              android:id="@+id/placeOfBirth"
+              android:layout_column="1"
+              />
+      </TableRow>
+
+      <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="visible">
-        <Button
-            android:text="@string/Next"
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button5"
-            android:layout_gravity="center_horizontal"
-            
+            android:id="@+id/nationality"
+            android:text="@string/nationality"
+            android:layout_column="0"
             />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Nationality"
+            android:entries="@array/nationality"
+            android:spinnerMode="dropdown" />
     </TableRow>
+
+      <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+          <Button
+              android:text="@string/Next"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/button5"
+              android:layout_gravity="center_horizontal"
+              android:layout_column="1"
+              />
+      </TableRow>
 
       <TableRow
         android:layout_width="match_parent"
@@ -260,7 +282,7 @@
             />
     </TableRow>
 
-      <TableRow
+    <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone">
@@ -283,26 +305,6 @@
             />
     </TableRow>
 
-      <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="gone">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/nationality"
-            android:text="@string/nationality"
-            android:layout_column="0"
-            />
-
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/Nationality"
-            android:entries="@array/nationality"
-            android:spinnerMode="dropdown" />
-    </TableRow>
 
     <!--<TableRow
         android:layout_width="match_parent"
