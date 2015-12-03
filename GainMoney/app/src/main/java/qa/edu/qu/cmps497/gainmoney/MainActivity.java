@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         newCvButton = (Button)findViewById(R.id.button1);
         hDButton    = (Button)findViewById(R.id.button2);
         uDButton    = (Button)findViewById(R.id.button3);
-       // uploadButton= (Button)findViewById(R.id.button4);
+        uploadButton= (Button)findViewById(R.id.button4);
         newCvButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
