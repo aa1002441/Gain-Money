@@ -16,6 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/button1"
+            android:visibility="visible"
             android:layout_gravity="center_horizontal" />
 
         <Button
@@ -23,6 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/button2"
+            android:visibility="visible"
             android:layout_gravity="center_horizontal"/>
 
         <Button
@@ -30,7 +32,49 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/button3"
+            android:visibility="visible"
             android:layout_gravity="center_horizontal"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/major"
+            android:text="Major: "
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/major_spinner"
+            android:entries="@array/majors"
+            android:spinnerMode="dropdown"
+            android:visibility="gone"/>
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/state"
+            android:text="State: "
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/state_spinner"
+            android:entries="@array/states"
+            android:spinnerMode="dropdown"
+            android:visibility="gone"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nextButton"
+            android:text="@string/Next"
+            android:layout_gravity="end"
+            android:visibility="gone"/>
     </LinearLayout>
 

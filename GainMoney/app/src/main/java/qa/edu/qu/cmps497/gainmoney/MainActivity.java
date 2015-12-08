@@ -14,6 +14,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.Spinner;
+import android.widget.TextView;
 
 import java.util.Calendar;
 
@@ -23,51 +25,52 @@ public class MainActivity extends AppCompatActivity {
     private static Button hDButton;
     private static Button uDButton;
     private static Button uploadButton;
+    private static TextView major;
+    private static TextView state;
+    private static Button nextButton;
+    private static Spinner majors;
+    private static Spinner states;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        final Intent intent = new Intent();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         newCvButton = (Button)findViewById(R.id.button1);
         hDButton    = (Button)findViewById(R.id.button2);
         uDButton    = (Button)findViewById(R.id.button3);
         uploadButton= (Button)findViewById(R.id.button4);
+        major       = (TextView)findViewById(R.id.major);
+        state       = (TextView)findViewById(R.id.state);
+        nextButton  = (Button)findViewById(R.id.nextButton);
+        majors      = (Spinner)findViewById(R.id.major_spinner);
+        states      = (Spinner)findViewById(R.id.state_spinner);
         newCvButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.i(TAG,"New CV buttoen select");
-                Intent intent = new Intent();
+                Log.i(TAG,"New CV button selected");
+
                 intent.setClass(MainActivity.this ,NewCV.class);// I don't have nay idea whay it work with this
-                startActivity(intent);
-            }
-        });
-        // onClickButtonListener();
-    }
-
-    public void onClickButtonListener(){
-
-       /* hDButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent("qa.edu.qu.cmps.project.NewCV");
                 startActivity(intent);
             }
         });
         uDButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent("qa.edu.qu.cmps.project.NewCV");
-                startActivity(intent);
+                Log.i(TAG, "University button selected");
+                major.setVisibility(View.VISIBLE);
+                state.setVisibility(View.VISIBLE);
+                nextButton.setVisibility(View.VISIBLE);
+                majors.setVisibility(View.VISIBLE);
+                states.setVisibility(View.VISIBLE);
+                newCvButton.setVisibility(View.GONE);
+                hDButton.setVisibility(View.GONE);
+                uDButton.setVisibility(View.GONE);
             }
         });
-        uploadButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent("qa.edu.qu.cmps.project.NewCV");
-                startActivity(intent);
-            }
-        });*/
+
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -83,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        Log.i(TAG,"in onOptionsItemSelected item ="+item.getTitle());
+        Log.i(TAG, "in onOptionsItemSelected item =" + item.getTitle());
         switch (item.getItemId()) {
             case R.id.about_menu:
                 launchAboutDialog();
@@ -95,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void launchAboutDialog() {
+    protected void launchAboutDialog() {
         AlertDialog.Builder alertDialog2 = new AlertDialog.Builder(this);
         LayoutInflater LI2 = getLayoutInflater();
         alertDialog2.setView(LI2.inflate(R.layout.about_layout, null));
@@ -121,8 +124,6 @@ public class MainActivity extends AppCompatActivity {
 
         alertDialog1.show();
     }
-
-
 
     private void launchApplyDialog(){
         AlertDialog.Builder alertDialog3 = new AlertDialog.Builder(this);

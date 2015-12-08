@@ -24,6 +24,14 @@
     <string name="upload_cv">Upload a CV File</string>
     <string name="Next">Next</string>
     <string name="save">Save</string>
+    <string name="help_main">By pressing one of these buttons you will be able to search for a job, apply for one or even creating a CV</string>
+    <string-array name="majors">
+        <item></item>
+    </string-array>
+    <string-array name="states">
+        <item>Undergraduate</item>
+        <item>Graduate</item>
+    </string-array>
     <string-array name="nationality">
         <item>Afghan</item>
         <item>Albanian</item>
