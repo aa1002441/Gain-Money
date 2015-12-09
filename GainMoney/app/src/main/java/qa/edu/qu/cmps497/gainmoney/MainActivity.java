@@ -20,16 +20,13 @@ import android.widget.TextView;
 import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
+
     final static String TAG ="GainMoney";
     private static Button newCvButton;
     private static Button hDButton;
     private static Button uDButton;
     private static Button uploadButton;
-    private static TextView major;
-    private static TextView state;
-    private static Button nextButton;
-    private static Spinner majors;
-    private static Spinner states;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,11 +37,7 @@ public class MainActivity extends AppCompatActivity {
         hDButton    = (Button)findViewById(R.id.button2);
         uDButton    = (Button)findViewById(R.id.button3);
         uploadButton= (Button)findViewById(R.id.button4);
-        major       = (TextView)findViewById(R.id.major);
-        state       = (TextView)findViewById(R.id.state);
-        nextButton  = (Button)findViewById(R.id.nextButton);
-        majors      = (Spinner)findViewById(R.id.major_spinner);
-        states      = (Spinner)findViewById(R.id.state_spinner);
+
         newCvButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,14 +51,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.i(TAG, "University button selected");
-                major.setVisibility(View.VISIBLE);
-                state.setVisibility(View.VISIBLE);
-                nextButton.setVisibility(View.VISIBLE);
-                majors.setVisibility(View.VISIBLE);
-                states.setVisibility(View.VISIBLE);
-                newCvButton.setVisibility(View.GONE);
-                hDButton.setVisibility(View.GONE);
-                uDButton.setVisibility(View.GONE);
+                intent.setClass(MainActivity.this, university_major.class);
+                startActivity(intent);
             }
         });
 

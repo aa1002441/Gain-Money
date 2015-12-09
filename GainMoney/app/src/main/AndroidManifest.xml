@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NewCV"></activity>
+        <activity android:name=".NewCV" />
+        <activity android:name=".university_major"></activity>
     </application>
 
 </manifest>
