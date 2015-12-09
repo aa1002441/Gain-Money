@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -17,11 +18,15 @@ import android.widget.DatePicker;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.google.android.gms.appindexing.Action;
+import com.google.android.gms.appindexing.AppIndex;
+import com.google.android.gms.common.api.GoogleApiClient;
+
 import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
 
-    final static String TAG ="GainMoney";
+    final static String TAG = "GainMoney";
     private static Button newCvButton;
     private static Button hDButton;
     private static Button uDButton;
@@ -33,20 +38,28 @@ public class MainActivity extends AppCompatActivity {
         final Intent intent = new Intent();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        newCvButton = (Button)findViewById(R.id.button1);
-        hDButton    = (Button)findViewById(R.id.button2);
-        uDButton    = (Button)findViewById(R.id.button3);
-        uploadButton= (Button)findViewById(R.id.button4);
+        newCvButton = (Button) findViewById(R.id.button1);
+        hDButton = (Button) findViewById(R.id.button2);
+        uDButton = (Button) findViewById(R.id.button3);
+        uploadButton = (Button) findViewById(R.id.button4);
 
         newCvButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.i(TAG,"New CV button selected");
+                Log.i(TAG, "New CV button selected");
 
-                intent.setClass(MainActivity.this ,NewCV.class);// I don't have nay idea whay it work with this
+                intent.setClass(MainActivity.this, NewCV.class);// I don't have nay idea whay it work with this
                 startActivity(intent);
             }
         });
+        /*hDButton.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Log.i(TAG,, "High School button seleceted");
+                intent.setClass(MainActivity.this, );
+            }
+        });*/
         uDButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
 
     }
 
@@ -81,7 +95,8 @@ public class MainActivity extends AppCompatActivity {
             case R.id.help_menu:
                 launchHelpDialog();
                 return true;
-            default: return false;
+            default:
+                return false;
         }
     }
 
@@ -112,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
         alertDialog1.show();
     }
 
-    private void launchApplyDialog(){
+    private void launchApplyDialog() {
         AlertDialog.Builder alertDialog3 = new AlertDialog.Builder(this);
         LayoutInflater LI = getLayoutInflater();
         alertDialog3.setView(LI.inflate(R.layout.apply_layout, null));
@@ -127,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
 
             }
-        }, c.get(Calendar.YEAR),c.get(Calendar.MONTH), c.get(Calendar.DAY_OF_MONTH));
+        }, c.get(Calendar.YEAR), c.get(Calendar.MONTH), c.get(Calendar.DAY_OF_MONTH));
         dialog.show();
     }
 }

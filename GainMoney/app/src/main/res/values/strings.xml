@@ -25,8 +25,234 @@
     <string name="Next">Next</string>
     <string name="save">Save</string>
     <string name="help_main">By pressing one of these buttons you will be able to search for a job, apply for one or even creating a CV</string>
+    <string name="companyName" />
+    <string name="companyAddress" />
     <string-array name="majors">
-        <item></item>
+        <item>(undeclared)</item>
+        <item>Aerospace Engineering</item>
+        <item>African Languages</item>
+        <item>African Studies</item>
+        <item>African Studies Interdepartmental Program</item>
+        <item>Afro-American Studies</item>
+        <item>Afro-American Studies Interdepartmental Program</item>
+        <item>American Indian Studies</item>
+        <item>American Indian Studies Interdepartmental Program</item>
+        <item>American Literature and Culture</item>
+        <item>Ancient Near Eastern Civilizations</item>
+        <item>Anthropology</item>
+        <item>Applied Linguistics</item>
+        <item>Applied Mathematics</item>
+        <item>Arabic</item>
+        <item>Archaeology</item>
+        <item>Archaeology Interdepartmental Program</item>
+        <item>Architectural Studies</item>
+        <item>Architecture</item>
+        <item>Art</item>
+        <item>Art History</item>
+        <item>Asian American Studies</item>
+        <item>Asian Humanities</item>
+        <item>Asian Languages and Cultures</item>
+        <item>Asian Religions</item>
+        <item>Astronomy</item>
+        <item>Astrophysics</item>
+        <item>Atmospheric and Oceanic Sciences</item>
+        <item>Atmospheric, Oceanic, and Environmental Sciences</item>
+        <item>Biochemistry</item>
+        <item>Biochemistry and Molecular Biology</item>
+        <item>Bioengineering</item>
+        <item>Bioinformatics Interdepartmental Program</item>
+        <item>Biological Chemistry</item>
+        <item>Biology</item>
+        <item>Biomathematics</item>
+        <item>Biomedical Engineering</item>
+        <item>Biomedical Engineering Interdepartmental Program</item>
+        <item>Biomedical Physics</item>
+        <item>Biomedical Physics Interdepartmental Program</item>
+        <item>Biophysics</item>
+        <item>Biostatistics</item>
+        <item>Business Economics</item>
+        <item>Cellular and Molecular Pathology</item>
+        <item>Central and East European Languages and Cultures</item>
+<!--
+Chemical Engineering
+Chemistry
+Chemistry/Materials Science
+Chemistry/Materials Science Interdepartmental Program
+Chicana and Chicano Studies
+Chinese
+Civil Engineering
+Classical Civilization
+Classics
+Clinical Research
+Cognitive Science
+Communication Studies
+Comparative Literature
+Computational and Systems Biology
+Computational and Systems Biology Interdepartmental Program
+Computer Science
+Computer Science and Engineering
+Conservation of Archaeological and Ethnographic Materials
+Conservation of Archaeological and Ethnographic Materials Interdepartmental Program
+Culture and Performance
+Dance
+Dental Surgery
+Design | Media Arts
+Earth and Environmental Science
+East Asian Studies
+East Asian Studies Interdepartmental Program
+Ecology, Behavior, and Evolution
+Economics
+Economics/International Area Studies
+Education
+Educational Administration Joint Ed.D. with UCI
+Electrical Engineering
+Engineering
+Engineering Schoolwide Programs
+English
+Environmental Health Sciences
+Environmental Science
+Environmental Science and Engineering
+Environmental Science and Engineering Interdepartmental Program
+Epidemiology
+Ethnomusicology
+European Studies
+European Studies Interdepartmental Program
+Film and Television
+French
+French and Francophone Studies
+French and Linguistics
+General Chemistry
+Geochemistry
+Geography
+Geography/Environmental Studies
+Geology
+Geology/Engineering Geology
+Geology/Paleobiology
+Geophysics and Space Physics
+Geophysics/Applied Geophysics
+Geophysics/Geophysics and Space Physics
+German
+Germanic Languages
+Global Studies
+Global Studies Interdepartmental Program
+Greek
+Greek and Latin
+Health Services
+Hebrew
+Hispanic Languages and Literatures
+History
+History/Art History
+History/Art History Interdepartmental Program
+Human Genetics
+Individual Field
+Individual Field of Concentration
+Indo-European Studies
+Indo-European Studies Interdepartmental Program
+Information Studies
+Institute of the Environment, Center for Interdisciplinary Instruction
+International Development Studies
+International Development Studies Interdepartmental Program
+Iranian Studies
+Islamic Studies
+Islamic Studies Interdepartmental Program
+Italian
+Italian and Special Fields
+Japanese
+Jewish Studies
+Korean
+Latin
+Latin American Studies
+Latin American Studies Interdepartmental Program
+Law
+Library and Information Science
+Linguistics
+Linguistics and Anthropology
+Linguistics and Asian Languages and Cultures
+Linguistics and Computer Science
+Linguistics and English
+Linguistics and French
+Linguistics and Italian
+Linguistics and Philosophy
+Linguistics and Psychology
+Linguistics and Scandinavian Languages
+Linguistics and Spanish
+Management
+Manufacturing Engineering
+Marine Biology
+Materials Engineering
+Materials Science and Engineering
+Mathematics
+Mathematics for Teaching
+Mathematics of Computation
+Mathematics/Applied Science
+Mathematics/Atmospheric and Oceanic Sciences
+Mathematics/Atmospheric and Oceanic Sciences Interdepartmental Program
+Mathematics/Economics
+Mathematics/Economics Interdepartmental Program
+Mechanical Engineering
+Medicine
+Medicine Schoolwide Program
+Microbiology, Immunology, and Molecular Genetics
+Middle Eastern and North African Studies
+Middle Eastern and North African Studies Interdepartmental Program
+Molecular and Medical Pharmacology
+Molecular Biology
+Molecular Biology Interdepartmental Program
+Molecular Toxicology
+Molecular Toxicology Interdepartmental Program
+Molecular, Cell, and Developmental Biology
+Molecular, Cellular, and Integrative Physiology
+Molecular, Cellular, and Integrative Physiology Interdepartmental Program
+Moving Image Archive Studies
+Moving Image Archive Studies Interdepartmental Program
+Music
+Music History
+Musicology
+Near Eastern Languages and Cultures
+Neurobiology
+Neuroscience
+Neuroscience
+Neuroscience Interdepartmental Program
+Nursing
+Oral Biology
+Oral Biology Section
+Philosophy
+Physics
+Physiological Science
+Political Science
+Portuguese
+Preventive Medicine and Public Health
+Psychobiology
+Psychology
+Public Administration
+Public Health
+Public Health Schoolwide Programs
+Public Policy
+Russian Language and Literature
+Russian Studies
+Scandinavian
+Scandinavian Languages and Cultures
+Slavic Languages and Literatures
+Social Welfare
+Sociology
+Southeast Asian Studies
+Southeast Asian Studies Interdepartmental Program
+Spanish
+Spanish and Community and Culture
+Spanish and Linguistics
+Spanish and Portuguese
+Special Education Joint
+Statistics
+Study of Religion
+Study of Religion Interdepartmental Program
+Teaching English as a Second Language
+Theater
+Theater and Performance Studies
+Urban Planning
+Women Studies
+World Arts and Cultures
+        </item>
+-->
     </string-array>
     <string-array name="states">
         <item>Undergraduate</item>
