@@ -186,6 +186,66 @@
               android:visibility="visible"
               />
       </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateob"
+            android:text="@string/dateOfBirth"
+            android:layout_column="0"
+            android:visibility="visible"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dob"
+            android:text="dd/mm/yyyy"
+            android:layout_column="0"
+            android:onClick="datePickerDialog"
+            android:visibility="visible"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/status"
+            android:text="@string/gender"
+            android:layout_column="0"
+            android:visibility="visible"
+            />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/married"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Married"
+                android:visibility="visible"/>
+
+            <RadioButton
+                android:id="@+id/single"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Single"
+                android:visibility="visible"/>
+
+        </RadioGroup>
+
+    </TableRow>
 
       <TableRow
         android:layout_width="match_parent"
@@ -210,6 +270,8 @@
             android:visibility="visible"/>
     </TableRow>
 
+
+
       <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -224,6 +286,7 @@
               android:layout_column="1"
               android:visibility="visible"
               />
+
       </TableRow>
 
       <TableRow
@@ -375,6 +438,15 @@
         android:layout_height="match_parent"
         >
         <Button
+            android:text="@string/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button7"
+            android:layout_gravity="center_horizontal"
+            android:layout_column="0"
+            android:visibility="gone"
+            />
+        <Button
             android:text="@string/save"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -383,5 +455,6 @@
             android:layout_column="1"
             android:visibility="gone"
             />
+
         </TableRow>
 </TableLayout>

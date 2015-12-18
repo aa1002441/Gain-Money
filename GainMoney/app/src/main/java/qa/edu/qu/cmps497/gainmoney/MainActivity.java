@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Log.i(TAG, "New CV button selected");
 
-                intent.setClass(MainActivity.this, NewCV.class);// I don't have nay idea whay it work with this
+                intent.setClass(MainActivity.this, NewCV.class);
                 startActivity(intent);
             }
         });
@@ -134,15 +134,5 @@ public class MainActivity extends AppCompatActivity {
         alertDialog3.show();
     }
 
-    public void datePickerDialogClicked(View view) {
-        Calendar c = Calendar.getInstance();
 
-        DatePickerDialog dialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
-            @Override
-            public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-
-            }
-        }, c.get(Calendar.YEAR), c.get(Calendar.MONTH), c.get(Calendar.DAY_OF_MONTH));
-        dialog.show();
-    }
 }

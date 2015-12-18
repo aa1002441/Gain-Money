@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Gain Money</string>
+    <string name="app_name">Wadifti</string>
     <string name="action_settings">Settings</string>
     <string name="new_cv">New CV</string>
     <string name="h_d">High School Degree</string>
@@ -24,6 +24,7 @@
     <string name="upload_cv">Upload a CV File</string>
     <string name="Next">Next</string>
     <string name="save">Save</string>
+    <string name="back">Back</string>
     <string name="help_main">By pressing one of these buttons you will be able to search for a job, apply for one or even creating a CV</string>
     <string name="companyName" />
     <string name="companyAddress" />
@@ -73,21 +74,21 @@
         <item>Business Economics</item>
         <item>Cellular and Molecular Pathology</item>
         <item>Central and East European Languages and Cultures</item>
+        <item>Chemical Engineering</item>
+        <item>Chemistry</item>
+        <item>Chemistry/Materials Science</item>
+        <item>Chemistry/Materials Science Interdepartmental Program</item>
+        <item>Chicana and Chicano Studies</item>
+        <item>Chinese</item>
+        <item>Civil Engineering</item>
+        <item>Classical Civilization</item>
+        <item>Classics</item>
+        <item>Clinical Research</item>
+        <item>Cognitive Science</item>
+        <item>Communication Studies</item>
+        <item>Comparative Literature</item>
+        <item>Computational and Systems Biology</item>
 <!--
-Chemical Engineering
-Chemistry
-Chemistry/Materials Science
-Chemistry/Materials Science Interdepartmental Program
-Chicana and Chicano Studies
-Chinese
-Civil Engineering
-Classical Civilization
-Classics
-Clinical Research
-Cognitive Science
-Communication Studies
-Comparative Literature
-Computational and Systems Biology
 Computational and Systems Biology Interdepartmental Program
 Computer Science
 Computer Science and Engineering
@@ -253,6 +254,7 @@ Women Studies
 World Arts and Cultures
         </item>
 -->
+
     </string-array>
     <string-array name="states">
         <item>Undergraduate</item>

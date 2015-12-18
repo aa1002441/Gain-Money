@@ -45,13 +45,23 @@
             android:text="State: "
             android:layout_gravity="center_horizontal"
             />
-        <Spinner
-            android:layout_width="match_parent"
+        <RadioGroup
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/state_spinner"
-            android:entries="@array/states"
-            android:spinnerMode="dropdown"
-            />
+            android:orientation="vertical"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/undergraduate"
+                android:text="Undergraduate"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/graduate"
+                android:text="Graduate"
+                />
+        </RadioGroup>
 
     </TableRow>
     <TableRow
@@ -64,6 +74,6 @@
             android:id="@+id/nextButton"
             android:text="@string/Next"
             android:layout_gravity="end"
-            android:layout_column="3" />
+            android:layout_column="1" />
     </TableRow>
 </TableLayout>
